@@ -1,19 +1,19 @@
 # Maintainer: Aaron Abbott <aaron.abbott1@gmail.com>
 pkgname=indicator-stickynotes
 pkgver=0.3.1
-pkgrel=2
+pkgrel=3
 _pkgrel_ubuntu=0
-pkgdesc="A stickynotes indicator for Unity Shell and possible other DE's"
+pkgdesc="Sticky Notes AppIndicator for Unity Shell and possible other DE's"
 arch=('any')
 url="https://launchpad.net/indicator-stickynotes"
 license=('GPL3')
-depends=('python-gobject' 'python3' 'libappindicator3')
+depends=('python-gobject' 'python3' 'libappindicator3' 'gtksourceview3' )
 source=(https://launchpad.net/~umang/+archive/${pkgname}/+files/${pkgname}_${pkgver}-${_pkgrel_ubuntu}~ppa1_all.deb)
 md5sums=('6f7954feddb6c885696c7ff0e8136f5c')
 
 build() {
   cd ${srcdir}
-  ar x ${pkgname}_${pkgver}-${_pkgrel_ubuntu}~ppa1_all.deb > /dev/null
+  ar x ${pkgname}_cat ${pkgver}-${_pkgrel_ubuntu}~ppa1_all.deb > /dev/null
   tar -xzf data.tar.gz
 }
 
