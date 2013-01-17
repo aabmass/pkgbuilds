@@ -13,7 +13,7 @@ md5sums=('6f7954feddb6c885696c7ff0e8136f5c')
 
 build() {
   cd ${srcdir}
-  ar x ${pkgname}_cat ${pkgver}-${_pkgrel_ubuntu}~ppa1_all.deb > /dev/null
+  ar x ${pkgname}_${pkgver}-${_pkgrel_ubuntu}~ppa1_all.deb > /dev/null
   tar -xzf data.tar.gz
 }
 
