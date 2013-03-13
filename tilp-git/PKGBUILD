@@ -2,12 +2,12 @@
 
 pkgname=tilp-git
 pkgver=20130313
-pkgrel=1
+pkgrel=3
 pkgdesc="TI graphing calculator link/transfer program"
 arch=(i686 x86_64)
 url="http://sourceforge.net/projects/tilp/"
 license=('GPL')
-depends=('git' 'libticables' 'libtifiles' 'libticonv' 'libticalcs')
+depends=('git' 'intltool' 'libticables-git' 'libtifiles-git' 'libticonv-git' 'libticalcs-git')
 conflics=('tilp')
 provides=('tilp')
 source=('tilp.desktop' 'tilp.xml')

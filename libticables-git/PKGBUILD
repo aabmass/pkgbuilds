@@ -1,5 +1,4 @@
 # Maintainer: Aaron Abbott <aaron.abbott1@gmail.com>
-# also stole the udev stuff from libticables in AUR 
 
 pkgname=libticables-git
 pkgver=20130313
@@ -11,9 +10,7 @@ license=('GPL')
 depends=('git' 'libticonv-git' 'libusb' 'glib2')
 conflics=('libticables')
 provides=('libticables')
-source=(69-libticables.rules)
-install=libticables.install
-md5sums=('2e38fe89764f129c567b06afbbdfdcd0')
+md5sums=()
 
 _gitroot="git://tilp.git.sourceforge.net/gitroot/tilp/libticables"
 _gitname="libticables"
@@ -40,9 +37,6 @@ build() {
 }
 
 package() {
-	install -m755 -d ${pkgdir}/etc/udev/rules.d
-    install -m644 ${srcdir}/69-libticables.rules ${pkgdir}/etc/udev/rules.d/
-	
 	cd "${srcdir}/${_gitname}-build"
 	make DESTDIR="$pkgdir" install
 }
