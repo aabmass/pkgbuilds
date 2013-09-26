@@ -1,6 +1,5 @@
-# $Id: PKGBUILD 180326 2013-03-20 13:37:40Z allan $
-# Maintainer: Allan McRae <allan@archlinux.org>
-# Contributor: judd <jvinet@zeroflux.org>
+# Maintainer: Aaron Abbott <aaron.abbott1@gmail.com>
+# PKGBUILD originally from ABS: Allan McRae, judd
 
 _target="arm-linux-gnueabi"
 _pkgname=ncurses
