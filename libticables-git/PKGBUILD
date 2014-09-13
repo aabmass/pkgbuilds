@@ -14,8 +14,8 @@ install=libticables.install
 source=('69-libticables.rules')
 md5sums=('2e38fe89764f129c567b06afbbdfdcd0')
 
-_gitroot="git://tilp.git.sourceforge.net/gitroot/tilp/libticables"
 _gitname="libticables"
+_gitroot="git://git.code.sf.net/p/tilp/${_gitname}.git"
 
 build() {
 	cd "$srcdir"

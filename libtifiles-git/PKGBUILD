@@ -12,8 +12,8 @@ conflics=('libtifiles')
 provides=('libtifiles')
 md5sums=()
 
-_gitroot="git://tilp.git.sourceforge.net/gitroot/tilp/libtifiles"
 _gitname="libtifiles"
+_gitroot="git://git.code.sf.net/p/tilp/${_gitname}.git"
 
 build() {
 	cd "$srcdir"
