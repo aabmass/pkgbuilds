@@ -2,7 +2,7 @@
 
 pkgname=libticalcs-git
 pkgver=20130404
-pkgrel=1
+pkgrel=2
 pkgdesc="TI Calculator library"
 arch=(i686 x86_64)
 url="http://sourceforge.net/projects/tilp/"

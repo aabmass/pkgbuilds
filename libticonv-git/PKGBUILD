@@ -2,7 +2,7 @@
 
 pkgname=libticonv-git
 pkgver=20130404
-pkgrel=1
+pkgrel=2
 pkgdesc="TI character set conversion library, git version"
 arch=(i686 x86_64)
 url="http://sourceforge.net/projects/tilp/"
